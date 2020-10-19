@@ -9,6 +9,8 @@ jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@master
       - name: Python Dependency Installation
       # You may pin to the exact commit or the version.
       # uses: py-actions/py-dependency-install@79cf4055e989c617a0679dd99c84a83b2f347460
@@ -21,9 +23,7 @@ jobs:
           # Boolean for setuptools install/upgrade prior to the dependency installation (default='true')
           update-setuptools: true # optional, default is true
           # Boolean for wheel install/upgrade prior to the dependency installation (default='true')
-          update-wheel: true # optional, default is true
-      - name: 'Checkout codes'
-        uses: actions/checkout@master
+          update-wheel: true # optional, default is true      
       - name: 'Generate ics file'
         run: bash ./start.sh
       - name: GitHub Push        
