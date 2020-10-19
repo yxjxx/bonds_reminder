@@ -52,7 +52,7 @@ def main():
         except Exception as err:
             print(err)
 
-    # print('整理筛选后的申购数据:\n')
+    print('整理筛选后的申购数据:\n')
     c = Calendar()
     for d in bond_subscribe_data:
         listdate = d['LISTDATE'] #2020-10-21T00:00:00       
@@ -74,5 +74,6 @@ def main():
         # [<Event 'My cool event' begin:2014-01-01 00:00:00 end:2014-01-01 00:00:01>]
         with open('kzz.ics', 'w') as my_file:
             my_file.writelines(c)
+            print('写入 kzz.ics:\n')
 if __name__ == '__main__':
     main()
