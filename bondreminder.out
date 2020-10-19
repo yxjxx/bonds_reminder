@@ -1,2 +1,4 @@
-  File "main_bonds.py", line 7
-SyntaxError: Non-ASCII character '\xe4' in file main_bonds.py on line 7, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+http://dcfm.eastmoney.com/em_mutisvcexpandinterface/api/js/get?type=KZZ_LB2.0&token=70f12f2f4f091e459a279469fe49eca5&p=1&st=STARTDATE&sr=-1&ps=50
+状态码： 200
+整理筛选后的申购数据:
+

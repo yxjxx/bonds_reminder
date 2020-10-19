@@ -52,7 +52,7 @@ def main():
         except Exception as err:
             print(err)
 
-    print('整理筛选后的申购数据:\n')
+    # print('整理筛选后的申购数据:\n')
     c = Calendar()
     for d in bond_subscribe_data:
         listdate = d['LISTDATE'] #2020-10-21T00:00:00       

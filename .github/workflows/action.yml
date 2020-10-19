@@ -1,0 +1,15 @@
+name: 'GitHub Actions KZZ Reminder Bot'
+
+on:
+  push:
+  schedule:
+    - cron: '0 24 * * *'
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@master
+      - name: 'Generate ics file'
+        run: bash ./start.sh
