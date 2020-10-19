@@ -1,3 +1,3 @@
 #! /bin/bash
 
-nohup python -u main_bonds.py > bondreminder.out 2>&1 &
+nohup python3 -u main.py > bondreminder.out 2>&1 &

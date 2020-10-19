@@ -10,6 +10,7 @@ def filter_subscribe_data(json_data):
     for data in json_data:
         STARTDATE = data['STARTDATE'].split('T')[0]  # 申购日期 <class 'str'> 2020-07-06T00:00:00
         # STARTDATE = '2020-07-07'
+        # 2020-10-15
         STARTDATE = datetime.strptime(STARTDATE, '%Y-%m-%d').date()  # 把获取的时间转换成<class 'datetime.datetime'>格式
         now_date = datetime.now().date()
         if STARTDATE < now_date:
