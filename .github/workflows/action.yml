@@ -30,6 +30,11 @@ jobs:
           update-wheel: true # optional, default is true      
       - name: 'Generate ics file'
         run: bash ./start.sh
+      - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Add changes" -a
       - name: GitHub Push        
         uses: ad-m/github-push-action@v0.6.0
         with:

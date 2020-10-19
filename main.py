@@ -71,9 +71,9 @@ def main():
             se.alarms.append(DisplayAlarm(trigger=timedelta(minutes=90), display_text=se.name))
             c.events.add(se)
         
-        # [<Event 'My cool event' begin:2014-01-01 00:00:00 end:2014-01-01 00:00:01>]
-        with open('kzz.ics', 'w') as my_file:
-            my_file.writelines(c)
-            print('写入 kzz.ics:\n')
+    with open('kzz.ics', 'w') as my_file:
+        my_file.writelines(c)
+        print('写入 kzz.ics:\n')
+        
 if __name__ == '__main__':
     main()
