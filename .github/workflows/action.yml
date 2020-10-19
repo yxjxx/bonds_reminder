@@ -13,3 +13,6 @@ jobs:
         uses: actions/checkout@master
       - name: 'Generate ics file'
         run: bash ./start.sh
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.6.0
+
