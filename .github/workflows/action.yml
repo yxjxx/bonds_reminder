@@ -12,7 +12,7 @@ jobs:
       - name: Python Dependency Installation
       # You may pin to the exact commit or the version.
       # uses: py-actions/py-dependency-install@79cf4055e989c617a0679dd99c84a83b2f347460
-      uses: py-actions/py-dependency-install@v2.0.2
+      use: py-actions/py-dependency-install@v2.0.2
       with:
         # Path to requirements.txt file
         path: # optional, default is requirements.txt
