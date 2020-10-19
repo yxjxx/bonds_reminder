@@ -9,6 +9,19 @@ jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
+      - name: Python Dependency Installation
+      # You may pin to the exact commit or the version.
+      # uses: py-actions/py-dependency-install@79cf4055e989c617a0679dd99c84a83b2f347460
+      uses: py-actions/py-dependency-install@v2.0.2
+      with:
+        # Path to requirements.txt file
+        path: # optional, default is requirements.txt
+        # Boolean for pip upgrade prior to the dependency installation (default='true')
+        update-pip: # optional, default is true
+        # Boolean for setuptools install/upgrade prior to the dependency installation (default='true')
+        update-setuptools: # optional, default is true
+        # Boolean for wheel install/upgrade prior to the dependency installation (default='true')
+        update-wheel: # optional, default is true
       - name: 'Checkout codes'
         uses: actions/checkout@master
       - name: 'Generate ics file'
