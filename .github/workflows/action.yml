@@ -31,7 +31,7 @@ jobs:
       - name: 'Generate ics file'
         run: bash ./start.sh
       - name: Commit files
-      run: |
+      run:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "Add changes" -a
