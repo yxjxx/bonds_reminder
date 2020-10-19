@@ -27,6 +27,7 @@ jobs:
       - name: 'Generate ics file'
         run: bash ./start.sh
       - name: GitHub Push
+        run: cat ./bondreminder.out
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.TOKEN }}
