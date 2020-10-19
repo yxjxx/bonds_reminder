@@ -6,6 +6,16 @@ from send_email import send_email
 from send_sms import subscribe_message_data, winning_message_data, send_subscribe_message, send_winning_message
 from datetime import datetime
 
+# 今天及以后的可转债信息
+def valid_bonds(json_data):
+    subscribe_json_data = filter_subscribe_data(json_data)  # 筛选数据
+    # print('筛选后的申购数据:\n',subscribe_json_data)
+    bond_subscribe_data = get_subscribe_text(subscribe_json_data)  # 重组需要的今天往后的数据
+    print('整理筛选后的申购数据:\n')
+    for i in bond_subscribe_data:
+        print(i)
+    print('\n')
+    return bond_subscribe_data
 
 def subscribe_reminder(json_data):
     subscribe_json_data = filter_subscribe_data(json_data)  # 筛选数据

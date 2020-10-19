@@ -2,15 +2,17 @@ import schedule
 import logging
 
 from get_all_data import get_data
-from reminder import subscribe_reminder, winning_reminder
+from reminder import subscribe_reminder, winning_reminder, valid_bonds
 
 """主函数"""
 def main():
-    url = "http://dcfm.eastmoney.com/em_mutisvcexpandinterface/api/js/get?type=KZZ_LB2.0&token=70f12f2f4f091e459a279469fe49eca5"  # 东方财富
+    # url = "http://dcfm.eastmoney.com/em_mutisvcexpandinterface/api/js/get?type=KZZ_LB2.0&token=70f12f2f4f091e459a279469fe49eca5"  # 东方财富
+    url = "http://dcfm.eastmoney.com/em_mutisvcexpandinterface/api/js/get?type=KZZ_LB2.0&token=70f12f2f4f091e459a279469fe49eca5&p=1&st=STARTDATE&sr=-1&ps=50"
     print(url)  
     json_data = get_data(url)
-    subscribe_reminder(json_data)
-    winning_reminder(json_data)
+    icals = valid_bonds(json_data)
+    # subscribe_reminder(json_data)
+    # winning_reminder(json_data)
     print("*" * 40 + "\n\n\n")
 
 
