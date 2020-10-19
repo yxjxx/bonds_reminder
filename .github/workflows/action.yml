@@ -15,4 +15,7 @@ jobs:
         run: bash ./start.sh
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          branch: ${{ github.ref }}
 
