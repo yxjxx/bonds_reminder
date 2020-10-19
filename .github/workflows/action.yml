@@ -15,7 +15,7 @@ jobs:
         uses: py-actions/py-dependency-install@v2.0.2
         with:
           # Path to requirements.txt file
-          path: ./requirements.txt # optional, default is requirements.txt
+          path: requirements.txt # optional, default is requirements.txt
           # Boolean for pip upgrade prior to the dependency installation (default='true')
           update-pip: true # optional, default is true
           # Boolean for setuptools install/upgrade prior to the dependency installation (default='true')
