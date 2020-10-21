@@ -68,8 +68,8 @@ def main():
             se = Event()
             se.name = d['SNAME'] + "申购"
             sdate = startdate.replace("T"," ") #'2014-01-01 00:00:00' 8:00
-            se.begin = sdate + datetime.timedelta(minutes=90) # 9:30
-            se.end = sdate + datetime.timedelta(minutes=210)  # 11:30
+            se.begin = sdate.replace("00:00:00", "01:30:00") # 9:30
+            se.end = sdate.replace("00:00:00", "03:30:00")  # 11:30
             se.alarms.append(DisplayAlarm(trigger=timedelta(minutes=150), display_text=se.name))# 12:00
             c.events.add(se)
         
