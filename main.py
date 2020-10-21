@@ -66,9 +66,11 @@ def main():
         startdate = d['STARTDATE']
         if startdate != '-':
             se = Event()
-            se.name = d['SNAME'] +"申购"
-            se.begin = startdate.replace("T"," ") #'2014-01-01 00:00:00'            
-            se.alarms.append(DisplayAlarm(trigger=timedelta(minutes=90), display_text=se.name))
+            se.name = d['SNAME'] + "申购"
+            sdate = startdate.replace("T"," ") #'2014-01-01 00:00:00' 8:00
+            se.begin = sdate + datetime.timedelta(minutes=90) # 9:30
+            se.end = sdate + datetime.timedelta(minutes=210)  # 11:30
+            se.alarms.append(DisplayAlarm(trigger=timedelta(minutes=150), display_text=se.name))# 12:00
             c.events.add(se)
         
     with open('kzz.ics', 'w') as my_file:

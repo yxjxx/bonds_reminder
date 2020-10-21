@@ -38,7 +38,7 @@ jobs:
         run: git diff
       - name: 'Git add '
         run: git add .
-      - name: 'Git  commit'
+      - name: 'Git commit'
         run: git commit -m "Add changes"
       - name: 'GitHub Push'
         uses: ad-m/github-push-action@v0.6.0
