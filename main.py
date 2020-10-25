@@ -61,8 +61,11 @@ def main():
         if listdate != '-':
             le = Event()
             le.name = d['SNAME'] +"上市"
-            le.begin = listdate.replace("T"," ") #'2014-01-01 00:00:00'
-            le.alarms.append(DisplayAlarm(trigger=timedelta(minutes=85), display_text=le.name))
+            ldate = listdate.replace("T"," ") #'2014-01-01 00:00:00' 8:00
+            le.begin = ldate.replace("00:00:00", "01:30:00") # 9:30
+            le.end = ldate.replace("00:00:00", "03:30:00") # 9:30
+            le.alarms.append(DisplayAlarm(trigger=timedelta(minutes=-5), display_text=le.name))
+            le.alarms.append(DisplayAlarm(trigger=timedelta(seconds=-10), display_text=le.name))
             c.events.add(le)
 
         startdate = d['STARTDATE']
