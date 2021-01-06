@@ -66,6 +66,7 @@ def main():
             le.end = ldate.replace("00:00:00", "03:30:00") # 9:30
             le.alarms.append(DisplayAlarm(trigger=timedelta(minutes=-5), display_text=le.name))
             le.alarms.append(DisplayAlarm(trigger=timedelta(seconds=-10), display_text=le.name))
+            le.description = 'http://data.eastmoney.com/kzz/detail/%s.html' % (d['BONDCODE'])
             c.events.add(le)
 
         startdate = d['STARTDATE']
@@ -76,6 +77,7 @@ def main():
             se.begin = sdate.replace("00:00:00", "01:30:00") # 9:30
             se.end = sdate.replace("00:00:00", "03:30:00")  # 11:30
             se.alarms.append(DisplayAlarm(trigger=timedelta(minutes=150), display_text=se.name))# 12:00
+            se.description = 'http://data.eastmoney.com/kzz/detail/%s.html' % (d['BONDCODE'])
             c.events.add(se)
         
     with open('kzz.ics', 'w') as my_file:
