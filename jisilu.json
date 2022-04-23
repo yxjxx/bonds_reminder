@@ -1,0 +1,146 @@
+[
+    {
+        "id": "CNV20107",
+        "code": "127047",
+        "title": "【开始转股】帝欧转债",
+        "start": "2022-04-29",
+        "description": "转债代码:127047<br>转股代码:127047",
+        "url": "/data/convert_bond_detail/127047",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "CNV23318",
+        "code": "111004",
+        "title": "【上市日】明新转债",
+        "start": "2022-04-25",
+        "description": "转债代码:111004<br>",
+        "url": "/data/convert_bond_detail/111004",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "CNV23331",
+        "code": "113648",
+        "title": "【申购日】巨星转债",
+        "start": "2022-04-25",
+        "description": "转债代码:113648<br>申购代码:754477<br>配售代码:753477",
+        "url": "/data/convert_bond_detail/113648",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "CNV23353",
+        "code": "113058",
+        "title": "【上市日】友发转债",
+        "start": "2022-04-26",
+        "description": "转债代码:113058<br>",
+        "url": "/data/convert_bond_detail/113058",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "CX113048",
+        "code": "113048",
+        "title": "【转债除息】晶科转债",
+        "start": "2022-04-25 00:00:02",
+        "description": "转债代码:113048<br>每10张付息: 3.00元(含税)",
+        "url": "/data/convert_bond_detail/113048",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "CX113579",
+        "code": "113579",
+        "title": "【转债除息】健友转债",
+        "start": "2022-04-25 00:00:02",
+        "description": "转债代码:113579<br>每10张付息: 6.00元(含税)",
+        "url": "/data/convert_bond_detail/113579",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "CX113624",
+        "code": "113624",
+        "title": "【转债除息】正川转债",
+        "start": "2022-04-28 00:00:02",
+        "description": "转债代码:113624<br>每10张付息: 5.00元(含税)",
+        "url": "/data/convert_bond_detail/113624",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "CX132014",
+        "code": "132014",
+        "title": "【转债除息】18中化EB",
+        "start": "2022-04-25 00:00:02",
+        "description": "转债代码:132014<br>每10张付息: 9.00元(含税)",
+        "url": "/data/convert_bond_detail/132014",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "C110070",
+        "code": "110070",
+        "title": "【正股分红】凌钢转债",
+        "start": "2022-04-27 00:00:03",
+        "description": "转债代码:110070<br>正股代码:600231<br>正股名称:凌钢股份<br>每10股派息0.9700元",
+        "url": "/data/convert_bond_detail/110070",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "C113524",
+        "code": "113524",
+        "title": "【正股分红】奇精转债",
+        "start": "2022-04-28 00:00:03",
+        "description": "转债代码:113524<br>正股代码:603677<br>正股名称:奇精机械<br>每10股派息3.0000元",
+        "url": "/data/convert_bond_detail/113524",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "C113635",
+        "code": "113635",
+        "title": "【正股分红】升21转债",
+        "start": "2022-04-28 00:00:03",
+        "description": "转债代码:113635<br>正股代码:603305<br>正股名称:旭升股份<br>每10股转赠4.00股,派息1.2000元",
+        "url": "/data/convert_bond_detail/113635",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "C113639",
+        "code": "113639",
+        "title": "【正股分红】华正转债",
+        "start": "2022-04-27 00:00:03",
+        "description": "转债代码:113639<br>正股代码:603186<br>正股名称:华正新材<br>每10股派息5.0000元",
+        "url": "/data/convert_bond_detail/113639",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "C123082",
+        "code": "123082",
+        "title": "【正股分红】北陆转债",
+        "start": "2022-04-29 00:00:03",
+        "description": "转债代码:123082<br>正股代码:300016<br>正股名称:北陆药业<br>每10股派息0.7000元",
+        "url": "/data/convert_bond_detail/123082",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "C127050",
+        "code": "127050",
+        "title": "【正股分红】麒麟转债",
+        "start": "2022-04-29 00:00:03",
+        "description": "转债代码:127050<br>正股代码:002984<br>正股名称:森麒麟<br>每10股派息1.7000元",
+        "url": "/data/convert_bond_detail/127050",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "C128017",
+        "code": "128017",
+        "title": "【正股分红】金禾转债",
+        "start": "2022-04-29 00:00:03",
+        "description": "转债代码:128017<br>正股代码:002597<br>正股名称:金禾实业<br>每10股派息6.5000元",
+        "url": "/data/convert_bond_detail/128017",
+        "color": "#FFE66F"
+    },
+    {
+        "id": "C128035",
+        "code": "128035",
+        "title": "【正股分红】大族转债",
+        "start": "2022-04-29 00:00:03",
+        "description": "转债代码:128035<br>正股代码:002008<br>正股名称:大族激光<br>每10股派息4.0000元",
+        "url": "/data/convert_bond_detail/128035",
+        "color": "#FFE66F"
+    }
+]
